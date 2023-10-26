@@ -1,0 +1,66 @@
+.vote-form {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 36px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  .vote-form h1 {
+    color: var(--color-blue);
+    margin: 4px 0 32px 0;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .vote-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .vote-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+  
+  .regBtn {
+    width: 100%;
+    background-color: var(--color-blue);
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .regBtn:hover {
+    background-color: var(--color-blue-dark);
+  }
+  
+  /* =========media querries========== */
+  @media screen and (max-width: 420px) {
+    .vote-form {
+      height: 340px;
+      padding: 0;
+      max-width: 300px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    .vote-form h1 {
+      margin: 28px 0 42px 0;
+    }
+  }

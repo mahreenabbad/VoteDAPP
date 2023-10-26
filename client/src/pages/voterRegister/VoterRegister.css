@@ -1,0 +1,92 @@
+.status-nav {
+    text-align: center;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(237, 241, 242);
+    /* background-color: var(--color-blue-dark); */
+    color: var(--color-blue-dark);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .voter-reg-wrapper {
+    width: 100%;
+    height: 84vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 180px;
+  }
+  
+  .voter-form {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 36px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  .voter-form h1 {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  
+  .voter-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .voter-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+  
+  .regBtn {
+    width: 100%;
+    background-color: var(--color-blue);
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .regBtn:hover {
+    background-color: var(--color-blue-dark);
+  }
+  
+  /* =========media querries========== */
+  @media screen and (max-width: 420px) {
+    .voter-reg-wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+    .voter-form {
+      height: 340px;
+      padding: 0;
+      max-width: 300px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+  }

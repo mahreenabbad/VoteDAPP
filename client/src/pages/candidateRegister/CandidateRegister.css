@@ -1,0 +1,126 @@
+.reg-cand-wrapper {
+    width: 100%;
+    height: 84vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px !important;
+  }
+  
+  .reg-img-wrapper {
+    height: 560px;
+    width: 480px;
+    background: rgb(162, 207, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(80, 176, 243, 1) 0%,
+      rgb(191, 220, 251) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  .reg-img-wrapper h1 {
+    text-align: center;
+    color: white;
+  }
+  .reg-img-wrapper p {
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+  }
+  .reg-img-wrapper img {
+    margin-top: 24px;
+  }
+  .can-reg-form {
+    height: 560px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 36px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  .can-reg-form h3 {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .can-reg-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .can-reg-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+  
+  .regBtn {
+    width: 100%;
+    background-color: var(--color-blue);
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .regBtn:hover {
+    background-color: var(--color-blue-dark);
+  }
+  /* =========media querries========== */
+  @media screen and (max-width: 420px) {
+    .reg-cand-wrapper {
+      flex-direction: column;
+      height: auto;
+      padding-top: 100px !important;
+    }
+    .reg-img-wrapper {
+      height: 280px;
+      width: auto;
+      margin: 12px;
+      gap: 12px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* Add shadow here */
+    }
+    .reg-img-wrapper h1 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+    }
+    .reg-img-wrapper p {
+      font-size: 12px;
+    }
+    .reg-img-wrapper img {
+      width: 180px;
+      margin-top: 0;
+    }
+    .can-reg-form {
+      padding: 0;
+      max-width: 300px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* Add shadow here */
+    }
+    .regBtn {
+      margin-bottom: 0px;
+    }
+  }

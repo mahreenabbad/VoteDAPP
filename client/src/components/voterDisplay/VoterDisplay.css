@@ -1,0 +1,80 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+  }
+  table.voter-table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+    margin: 0 auto;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Set fixed widths for each column */
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 30%;
+    min-width: 200px;
+  }
+  
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 5%;
+    min-width: 80px;
+  }
+  
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 5%;
+    min-width: 80px;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 420px) {
+    table.voter-table {
+      max-width: 400px;
+    }
+  
+    th {
+      font-size: 12px;
+    }
+    th:nth-child(1),
+    td:nth-child(1) {
+      font-size: 12px;
+      width: 30%;
+      min-width: 100px;
+    }
+  
+    th:nth-child(2),
+    td:nth-child(2) {
+      font-size: 12px;
+  
+      width: 5%;
+      min-width: 20px;
+    }
+  
+    th:nth-child(3),
+    td:nth-child(3) {
+      font-size: 12px;
+      width: 5%;
+      min-width: 20px;
+    }
+  }
